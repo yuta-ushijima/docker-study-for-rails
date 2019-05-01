@@ -7,7 +7,7 @@ ENV LANG=C.UTF-8 \
     LC_ALL=C.UTF-8 \
     LC_CTYPE="utf-8"
 # 環境変数
-ENV APP="/docker_example_for_rails" \
+ENV APP="/docker-study-for-rails" \
     CONTAINER_ROOT="./" \
     NOKOGIRI_OPTION="--use-system-libraries \
                     --with-xml2-config=/usr/bin/xml2-config \
