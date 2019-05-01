@@ -1,24 +1,38 @@
-# README
+# Docker-stury-for-rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Ruby version
+```bash
+2.6.1
+```
 
-Things you may want to cover:
+## Rails version
+```bash
+5.2.2
+```
 
-* Ruby version
+## For Docker
 
-* System dependencies
+## Install System dependences
+```bash
+$ docker-compose run --rm app bundle install
+```
 
-* Configuration
+## Database creation
+```bash
+$ docker-compose run --rm app bundle exec rails db:create
+```
 
-* Database creation
+## Database initialization
+```bash
+$ docker-compose run --rm app bundle exec rails db:migrate:reset
+```
 
-* Database initialization
+## How to run the test suite
+```bash
+$ docker-compose run --rm app bundle exec rails test
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Execute rails server
+```bash
+$ docker-compose up
+```
