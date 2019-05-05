@@ -12,7 +12,7 @@ ENV APP="/docker-study-for-rails" \
     NOKOGIRI_OPTION="--use-system-libraries \
                     --with-xml2-config=/usr/bin/xml2-config \
                     --with-xslt-config=/usr/bin/xslt-config" \
-    MYSQL_PORT=6306 \
+    MYSQL_PORT=4306 \
     SERVER_PORT=4000
 # ライブラリのインストール(追加したい場合は以下に追記)
 RUN apk update \
